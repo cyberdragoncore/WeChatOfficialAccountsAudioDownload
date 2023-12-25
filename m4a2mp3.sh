@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#
+# 获取当前目录
 cur_dir=$(pwd)
 
 for file in ${cur_dir}/*.m4a
@@ -24,6 +24,7 @@ do
         *)
             ;;
         esac
+        
     # 判断是否已经存在
     if [[ ! -f ${cur_dir}/mp3/${filename}.mp3 ]]; then
         # 进行文件转换
